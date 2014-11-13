@@ -12,10 +12,9 @@ FILES=($( ls *.needle ))
 for k in $( seq 0 $((${#FILES[@]} - 1)) ) ; do
 
 	FILE=${FILES[$k]}
-	OUTPUT=$FILE."MATCHES_"$MATCHES.sequences
 	date ; echo $FILE
-	grep -n -P "$MATCHES/(\d+)" $FILE | grep "Identity"  | cut -f1 -d: > lines.$SUFFIX.txt
-	
+	grep -n -P "$MATCHES/(\d+)" $FILE | grep "Identity"  | cut -f1 -d: > lines.$SUFFIX.txt	
+	OUTPUT=$FILE."MATCHES_"$MATCHES.sequences ; rm -f $OUTPUT
 	while read LINE ; do
 		awk -v NUMBER=$LINE 'NR == NUMBER-6 {print ; exit}' $FILE >> $OUTPUT
 		awk -v NUMBER=$LINE 'NR == NUMBER+11 {print ; exit}' $FILE >> $OUTPUT
