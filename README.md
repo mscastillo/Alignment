@@ -2,7 +2,7 @@ Alignment
 =========
 
 
-# `tags_counter.sh` [:page_with_curl:](https://github.com/mscastillo/Alignment/blob/master/tags_counter.sh)
+# `tags_counter.sh` [:link:](https://github.com/mscastillo/Alignment/blob/master/tags_counter.sh)
 
 This script takes a *fasta* file with short tags and find them among the sequences of a given *fastq* file. It depends on `needle` from the [EMBOSS tools](http://www.ebi.ac.uk/Tools/emboss/) to perform the search.
 
@@ -18,7 +18,7 @@ GATAATACAAAGATA
 `needle` is set up to perform the alignment, across the forward and reverse (and complement) sequences, with no gaps but mismatches. The resulting alignment profiles are saved in two individual files for each tag: one for the forward and tother for the reverse alignment. In addition, it will output for each tag the total number of alignments (both forward and reverse) with up to a given number of mismatches.
 
 
-# `tags_mismatches.sh` [:octocat:](https://github.com/mscastillo/Alignment/blob/master/tags_mismatches.sh)
+# `tags_mismatches.sh` [:link:](https://github.com/mscastillo/Alignment/blob/master/tags_mismatches.sh)
 
 This script takes the output files from `tags_counter.sh` and retrieves the alignment reports of sequences with a given number of mismatches.
 
