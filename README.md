@@ -2,7 +2,7 @@ Alignment
 =========
 
 
-# `tags_counter.sh` [:octocat:](https://github.com/mscastillo/Alignment/blob/master/tags_counter.sh)
+# `tags_counter.sh` [:page_with_curl:](https://github.com/mscastillo/Alignment/blob/master/tags_counter.sh)
 
 This script takes a *fasta* file with short tags and find them among the sequences of a given *fastq* file. It depends on `needle` from the [EMBOSS tools](http://www.ebi.ac.uk/Tools/emboss/) to perform the search.
 
