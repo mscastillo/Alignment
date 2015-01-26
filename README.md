@@ -7,7 +7,7 @@ Alignment
 This script takes a *fasta* file with short tags and find them among the sequences of a given *fastq* file. It depends on `needle` from the [EMBOSS tools](http://www.ebi.ac.uk/Tools/emboss/) to perform the search.
 
 ```bash
-head -5 sequences.fasta 
+head -5 tags.fasta 
 >EMBOSS_001
 ATACAAAGATAGATA
 >EMBOSS_002
