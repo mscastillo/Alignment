@@ -4,7 +4,7 @@ Alignment
 
 # `tags_counter.sh`
 
-This script takes a *fasta* file with short tags and look for them on the sequences of a given *fastq* file. It depends on `needle` from the [EMBOSS tools](http://www.ebi.ac.uk/Tools/emboss/).
+This script takes a *fasta* file with short tags and find them among the sequences of a given *fastq* file. It depends on `needle` from the [EMBOSS tools](http://www.ebi.ac.uk/Tools/emboss/) to perform the search.
 
 ```bash
 head -5 sequences.fasta 
@@ -15,7 +15,7 @@ GATAATACAAAGATA
 >EMBOSS_003
 ```
 
-The resulting alignment profiles will be saved in individual files for each tag in the *fasta* file. In addition, it will count the number of occurrences with up to a given number of mismatches.
+`needle` is set up to perform the alignment, across the forward and reverse (and complement) sequences, with no gaps but mismatches. The resulting alignment profiles are saved in two individual files for each tag: one for the forward and tother for the reverse alignment. In addition, it will output for each tag the total number of alignments (both forward and reverse) with up to a given number of mismatches.
 
 
 # `tags_mismatches.sh`
