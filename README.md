@@ -23,7 +23,7 @@ The resulting alignment profiles will be saved in individual files for each tag 
 This script takes the output files from `tags_counter.sh` and retrieves the alignment reports of sequences with a given number of mismatches.
 
 ```bash
-head -5 EMBOSS_001.needle.MATCHES_18 
+head -5 EMBOSS_001.needle.MATCHES_13 
 # 1: SN0123:456:7:8910:1112:1314#ATACA
 EMBOSS_001         1--------------------------ATACAAAGATAGATA----------     15
                                               ||.||||.|||||||
