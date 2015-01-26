@@ -26,6 +26,6 @@ This script takes the output files from `tags_counter.sh` and retrieves the alig
 head -5 EMBOSS_001.needle.MATCHES_18 
 # 2: SN0123:456:7:8910:1112:1314#ATACA
 EMBOSS_001         1--------------------------ATACAAAGATAGATA----------     15
-                                              ||.||||.||||||  
+                                              ||.||||.|||||||
 SN0123:456:7:      1 AATTCCAGCTGAGCGGGCCGGCCCTCAAGACAGACAATGATAGATAACTG     50
 ```
